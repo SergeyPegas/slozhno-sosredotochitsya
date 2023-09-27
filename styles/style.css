@@ -28,16 +28,16 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: var(--main-gap);
+  padding: var(--small, 10px);
 }
 
 .header__decorative-element {
   position: absolute;
-  inset-block-start: var(--main-gap);
-  inset-inline-end: var(--main-gap);
+  inset-block-start: var(--small, 10px);
+  inset-inline-end: var(--small, 10px);
   display: flex;
   align-items: center;
-  gap: var(--main-gap);
+  gap: var(--small, 10px);
   color: var(--accent-color);
   font-size: 18px;
   line-height: 139%;
@@ -119,34 +119,34 @@
 }
 
 .decorated-zone::before {
-  inset-block-start: var(--main-gap);
-  inset-inline-end: var(--main-gap);
+  inset-block-start: var(--small, 10px);
+  inset-inline-end: var(--small, 10px);
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  inset-block-end: var(--main-gap);
-  inset-inline-start: var(--main-gap);
+  inset-block-end: var(--small, 10px);
+  inset-inline-start: var(--small, 10px);
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
 }
 
 .content {
   display: grid;
-  gap: 50px;
-  padding: 40px var(--main-gap);
+  gap: var(--large, 50px);
+  padding: 40px var(--small, 10px);
 }
 
 /* Section */
 .section {
   display: grid;
-  gap: 20px;
+  gap: var(--medium, 20px);
 }
 
 .section__card-list {
   display: grid;
-  gap: 20px;
+  gap: var(--medium, 20px);
 }
 
 .section__title {
@@ -161,14 +161,14 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 130%;
-  margin-block-end: 20px;
+  margin-block-end: var(--medium, 20px);
 }
 
 /* Card */
 .card {
   display: flex;
   flex-direction: column;
-  gap: var(--main-gap);
+  gap: var(--small, 10px);
 }
 
 .card__title {
@@ -202,7 +202,7 @@
 /* Gallery */
 .gallery {
   display: grid;
-  gap: var(--main-gap);
+  gap: var(--small, 10px);
 }
 
 .gallery__title {
@@ -214,7 +214,7 @@
 
 .gallery__container {
   display: grid;
-  gap: var(--main-gap);
+  gap: var(--small, 10px);
 }
 
 .gallery__image {
@@ -230,7 +230,7 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: var(--main-gap);
+  padding: var(--small, 10px);
 }
 
 .footer__title {
@@ -245,7 +245,7 @@
 /* Переопределение классов под планшет */
 @media (width >= 768px) {
   .header {
-    padding: 20px;
+    padding: var(--medium, 20px);
   }
 
   .header__title {
@@ -254,8 +254,8 @@
   }
 
   .header__decorative-element {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
+    inset-block-start: var(--medium, 20px);
+    inset-inline-end: var(--medium, 20px);
   }
 
   .header__subtitle {
@@ -264,18 +264,18 @@
   }
 
   .decorated-zone::before {
-    inset-block-start: 20px;
-    inset-inline-end: 20px;
+    inset-block-start: var(--medium, 20px);
+    inset-inline-end: var(--medium, 20px);
   }
 
   .decorated-zone::after {
-    inset-block-end: 20px;
-    inset-inline-start: 20px;
+    inset-block-end: var(--medium, 20px);
+    inset-inline-start: var(--medium, 20px);
   }
 
   .content {
     gap: 80px;
-    padding: 60px 20px;
+    padding: 60px var(--medium, 20px);
   }
 
   .two-cols {
@@ -288,12 +288,12 @@
   }
 
   .gallery {
-    gap: 20px;
+    gap: var(--medium, 20px);
   }
 
   .gallery__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: var(--medium, 20px);
   }
 
   .gallery__image_long {
@@ -306,7 +306,7 @@
 
   .footer {
     justify-content: center;
-    padding: 20px;
+    padding: var(--medium, 20px);
   }
 
   .footer__title {
@@ -316,12 +316,12 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: var(--medium, 20px);
   }
 }
 
 
-/* Переопределение классов под desktop */
+/* Переопределение классов под desop */
 @media (width >= 1024px) {
   .header__theme-menu {
     align-self: start;
@@ -330,6 +330,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: var(--main-gap);
+    gap: var(--small, 10px);
   }
 }

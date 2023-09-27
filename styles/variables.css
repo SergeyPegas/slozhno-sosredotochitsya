@@ -9,5 +9,7 @@
   --decor-color: #ff0070;
   --accent-color: #ff0070;
   --hover-border: rgba(255, 0, 112, 0.4);
-  --main-gap: 20px;
+  --small: 10px;
+  --medium: 20px;
+  --large: 50px;
 }
