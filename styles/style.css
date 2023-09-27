@@ -223,6 +223,7 @@
 /* Footer */
 .footer {
   display: grid;
+  justify-content: center;
   align-items: center;
   block-size: 100vh;
   position: relative;
@@ -231,7 +232,7 @@
 
 .footer__title {
   color: var(--main-title-color, #db00ff);
-  text-shadow: 2px 2px 0 var(--main-title-shadow);
+  text-shadow: 2px 2px 0 #ff8dcb;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%;
@@ -300,15 +301,6 @@
     grid-row: span 2;
   }
 
-  .footer {
-    justify-content: center;
-    padding: var(--medium, 20px);
-  }
-
-  .footer__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -316,8 +308,23 @@
   }
 }
 
+@media (width > 768px)
+{
+  .three-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer {
+    justify-content: center;
+    padding: var(--medium, 20px);
+  }
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    text-shadow: 2px 2px 0 #ff8dcb;
+  }
+}
 
-/* Переопределение классов под desop */
+/* Переопределение классов под desktop */
 @media (width >= 1024px) {
   .header__theme-menu {
     align-self: start;
@@ -327,5 +334,8 @@
   .header__theme-menu-list {
     flex-direction: row;
     gap: var(--small, 10px);
+  }
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--main-title-shadow);
   }
 }
