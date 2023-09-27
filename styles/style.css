@@ -1,6 +1,10 @@
 .page {
   font-family: var(--main-font, monospace);
-  background: var(--bg-color, #000028) var(--bg-image) no-repeat center / cover;
+  background-color: var(--bg-color, #000028);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
@@ -24,16 +28,16 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: var(--main-gap);
+  padding: 10px;
 }
 
 .header__decorative-element {
   position: absolute;
-  inset-block-start: var(--main-gap);
-  inset-inline-end: var(--main-gap);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   display: flex;
   align-items: center;
-  gap: var(--main-gap);
+  gap: 10px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 139%;
@@ -115,15 +119,15 @@
 }
 
 .decorated-zone::before {
-  inset-block-start: var(--main-gap);
-  inset-inline-end: var(--main-gap);
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  inset-block-end: var(--main-gap);
-  inset-inline-start: var(--main-gap);
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
 }
@@ -131,7 +135,7 @@
 .content {
   display: grid;
   gap: 50px;
-  padding: 40px var(--main-gap);
+  padding: 40px 10px;
 }
 
 /* Section */
@@ -164,7 +168,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: var(--main-gap);
+  gap: 10px;
 }
 
 .card__title {
@@ -198,7 +202,7 @@
 /* Gallery */
 .gallery {
   display: grid;
-  gap: var(--main-gap);
+  gap: 10px;
 }
 
 .gallery__title {
@@ -210,7 +214,7 @@
 
 .gallery__container {
   display: grid;
-  gap: var(--main-gap);
+  gap: 10px;
 }
 
 .gallery__image {
@@ -226,7 +230,7 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: var(--main-gap);
+  padding: 10px;
 }
 
 .footer__title {
@@ -326,6 +330,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: var(--main-gap);
+    gap: 10px;
   }
 }
