@@ -1,6 +1,6 @@
 .page {
   font-family: var(--main-font, monospace);
-  background: var(--bg-color) var(--bg-image) no-repeat center / cover;
+  background: var(--bg-color, #000028) var(--bg-image) no-repeat center / cover;
   background-attachment: fixed;
 }
 
@@ -130,19 +130,19 @@
 
 .content {
   display: grid;
-  gap: calc(var(--main-gap) * 5);
+  gap: 50px;
   padding: 40px var(--main-gap);
 }
 
 /* Section */
 .section {
   display: grid;
-  gap: calc(var(--main-gap) * 2);
+  gap: 20px;
 }
 
 .section__card-list {
   display: grid;
-  gap: calc(var(--main-gap) * 2);
+  gap: 20px;
 }
 
 .section__title {
@@ -270,7 +270,7 @@
   }
 
   .content {
-    gap: calc(var(--main-gap) * 8);
+    gap: 80px;
     padding: 60px 20px;
   }
 
@@ -284,12 +284,12 @@
   }
 
   .gallery {
-    gap: calc(var(--main-gap) * 2);
+    gap: 20px;
   }
 
   .gallery__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: calc(var(--main-gap) * 2);
+    gap: 20px;
   }
 
   .gallery__image_long {
@@ -312,7 +312,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: calc(var(--main-gap) * 2);
+    gap: 20px;
   }
 }
 
