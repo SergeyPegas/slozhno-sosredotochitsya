@@ -1,10 +1,6 @@
 .page {
   font-family: var(--main-font, monospace);
-  background-color: var(--bg-color, #000028);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--bg-color, #000028) var(--bg-image) no-repeat center / cover;
   background-attachment: fixed;
 }
 
@@ -28,16 +24,16 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: 10px;
+  padding: var(--main-gap);
 }
 
 .header__decorative-element {
   position: absolute;
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-block-start: var(--main-gap);
+  inset-inline-end: var(--main-gap);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--main-gap);
   color: var(--accent-color);
   font-size: 18px;
   line-height: 139%;
@@ -119,34 +115,34 @@
 }
 
 .decorated-zone::before {
-  inset-block-start: 10px;
-  inset-inline-end: 10px;
+  inset-block-start: var(--main-gap);
+  inset-inline-end: var(--main-gap);
   border-block-start: 1px solid var(--accent-color);
   border-inline-end: 1px solid var(--accent-color);
 }
 
 .decorated-zone::after {
-  inset-block-end: 10px;
-  inset-inline-start: 10px;
+  inset-block-end: var(--main-gap);
+  inset-inline-start: var(--main-gap);
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
 }
 
 .content {
   display: grid;
-  gap: 50px;
-  padding: 40px 10px;
+  gap: calc(var(--main-gap) * 5);
+  padding: 40px var(--main-gap);
 }
 
 /* Section */
 .section {
   display: grid;
-  gap: 20px;
+  gap: calc(var(--main-gap) * 2);
 }
 
 .section__card-list {
   display: grid;
-  gap: 20px;
+  gap: calc(var(--main-gap) * 2);
 }
 
 .section__title {
@@ -168,7 +164,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--main-gap);
 }
 
 .card__title {
@@ -202,7 +198,7 @@
 /* Gallery */
 .gallery {
   display: grid;
-  gap: 10px;
+  gap: var(--main-gap);
 }
 
 .gallery__title {
@@ -214,7 +210,7 @@
 
 .gallery__container {
   display: grid;
-  gap: 10px;
+  gap: var(--main-gap);
 }
 
 .gallery__image {
@@ -230,7 +226,7 @@
   align-items: center;
   block-size: 100vh;
   position: relative;
-  padding: 10px;
+  padding: var(--main-gap);
 }
 
 .footer__title {
@@ -274,7 +270,7 @@
   }
 
   .content {
-    gap: 80px;
+    gap: calc(var(--main-gap) * 8);
     padding: 60px 20px;
   }
 
@@ -288,12 +284,12 @@
   }
 
   .gallery {
-    gap: 20px;
+    gap: calc(var(--main-gap) * 2);
   }
 
   .gallery__container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: calc(var(--main-gap) * 2);
   }
 
   .gallery__image_long {
@@ -316,7 +312,7 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: calc(var(--main-gap) * 2);
   }
 }
 
@@ -330,6 +326,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 10px;
+    gap: var(--main-gap);
   }
 }

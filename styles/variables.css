@@ -9,4 +9,21 @@
   --decor-color: #ff0070;
   --accent-color: #ff0070;
   --hover-border: rgba(255, 0, 112, 0.4);
+  --main-gap: 20px;
+}
+:root {
+  --accent-color: #ff0070;
+  --menu-color: #ff0070;
+  --main-bg-color: #000028;
+  --main-text-color: #F1B2CE;
+  --heading-color: #DB00FF;
+  --main-font: 'IBM Plex mono', monospace;
+  --main-font-size: 18px;
+  --main-line-height: 130%;
+  --main-gap: 20px;
+  --article-heading-color: #000028;
+  --section-heading-color: #ff0070;
+  --decoration-visibility: visible;
+  --bg-image: url(../images/cover-image-dark.png);
+  --hover-color: 1px solid rgba(255, 0, 112, 0.40);
 }
