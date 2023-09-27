@@ -1,10 +1,6 @@
 .page {
   font-family: var(--main-font, monospace);
-  background-color: var(--bg-color, #000028);
-  background-image: var(--bg-image);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--bg-color, #000028) var(--bg-image) no-repeat center / cover;
   background-attachment: fixed;
 }
 
