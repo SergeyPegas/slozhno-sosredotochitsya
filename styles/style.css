@@ -281,7 +281,7 @@
 
   .three-cols {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .gallery {
@@ -308,9 +308,12 @@
   }
 }
 
-@media (width > 768px)
-{
+@media (width > 768px) {
   .three-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .three-cols {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
